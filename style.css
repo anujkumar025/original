@@ -16,6 +16,43 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+/* html {
+	height: 100%;
+  } */
+  
+  /* body {
+	background: #000000;
+	color: #ffffff;
+	margin: 0;
+	min-height: 100%;
+	height: 100%;
+	position: relative;
+  } */
+  
+  .hub {
+	/* display: block; */
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	/* position: relative; */
+	color: white;
+	margin-top: 30px;
+	margin-left: 45px;
+	/* top: 50%; */
+	/* left: 50%; */
+	transform: translate(-50%, -50%);
+	/* float: left; */
+  }
+  
+  .hub span:nth-child(2) {
+	background: #FF9900;
+	color: #000000;
+	border-radius: 8px;
+	padding: 0px 6px 0px 6px;
+	/* display: inline-block; */
+  }
+    
+
 header {
 	height: 69vh;
 	/* background-color: #000; */
@@ -26,7 +63,7 @@ header {
 nav {
 	background-color: #2e2e2e;
 	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 	top: 0;
 	position: fixed;
 	display: flex;
@@ -53,14 +90,14 @@ nav ul li a {
 	text-decoration: none;
 }
 nav ul li a:hover {
-	color: #fff;
+	color: #000;
 	border-radius: 5px;
-	background: #EAB464;
+	background: #ffff00;
 }
 .active {
-	color: #fff;
+	color: #000;
 	border-radius: 5px;
-	background: #EAB464;
+	background: #ffff00;
 }
 .srch {
 	padding: 2px 10px;
@@ -85,13 +122,13 @@ nav ul li a:hover {
 .get-started {
 	margin-left: 50px;
 	padding: 5px 20px;
-	border: 2px solid #EAB464;
+	border: 2px solid #ffff00;
 	border-radius: 20px;
 	text-decoration: none;
 	
 	transition: .5s;
-	background-color: #EAB464;
-	color: #fff;
+	background-color: #ffff00;
+	color: #000;
 }
 .get-started:hover {
 	color: #2e2e2e;
@@ -130,7 +167,11 @@ a, button {
 	line-height: 20px;
 }
 .quote p {
-	font-size: 50px;
+	font-size: 30px;
+	color: #F9F6EE;
+}
+.quote p span{
+	font-size: 35px;
 	color: #F9F6EE;
 }
 .quote .play {
@@ -165,7 +206,7 @@ a, button {
 .side-menu {
 	width: 100%;
 	height: 100%;
-	background: #EAB464;
+	background: #ffff00;
 	position: absolute;
 	top: 0;
 	transition: .8s;
@@ -177,7 +218,7 @@ a, button {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	/* background: #EAB464; */
+	/* background: #ffff00; */
 }
 .side-menu ul li {
 	list-style: none;
@@ -190,7 +231,7 @@ a, button {
 }
 .side-menu ul li:hover a{
 	background: #F9F6EE;
-	color: #EAB464;
+	color: #ffff00;
 }
 .side-menu ul li a{
 	color: #F9F6EE;
@@ -283,7 +324,7 @@ a, button {
 }
 .smbox .data {
 	font-size: 80px;
-	color: #EAB464;	
+	color: #ffff00;	
 }
 .smbox .det {
 	font-size: 20px;
@@ -366,18 +407,20 @@ a, button {
 	width: 250px;
 	padding: 28px;
 	border-radius: 10px;
-	border: 1px solid #EAB464;
+	border: 1px solid #ffff00;
 	font-size: 15px;
 	color: #F9F6EE;
 	font-family: cursive;
 	text-decoration: none;
 }
-.cbox .det a:hover {
-	background: linear-gradient(to right, #EAB464, #FFD700);
-	color: white;
-}
+
 .cbox .det a img{
 	filter: brightness(100);
+}
+
+.cbox .det a:hover {
+	background: linear-gradient(to right, #ffff00, #FFD700);
+	color: black;
 }
 
 .srch img {
@@ -509,7 +552,7 @@ a, button {
 	transition-duration: .5s;
 }
 .service-swipe .s-card p {
-	color: #f2f2f2;
+	color: #fff;
 	font-size: 1.2em;
 	font-family: 'Open Sans',sans-serif;
 }
@@ -520,7 +563,7 @@ a, button {
 
 /*Contact Us Section*/
 .csec {
-	background: #EAB464;
+	background: #ffff00;
 	background-attachment: fixed; 
 	position: absolute;
 	width: 100%;
@@ -570,7 +613,7 @@ a, button {
 	font-weight: 600;
 }
 .imp {
-	color: yellow;
+	color: black;
 }
 form textarea {
 	width: 100%;
@@ -585,13 +628,13 @@ form textarea {
 }
 #csubmit {
 	margin-top: 20px; 
-	background: #EAB464;
+	background: #ffff00;
 	border-radius: 5px;
 	border-style: none;
 	outline: none;
 	width: 100%;
 	padding: 15px 25px;
-	color: #fff;
+	color: #000;
 	font-size: 12px;
 	cursor: pointer;
 }
@@ -751,7 +794,7 @@ form textarea {
 }
 .feed #csubmit {
 	margin-top: 25px; 
-	background: #EAB464;
+	background: #ffff00;
 	border-radius: 5px;
 	border-style: none;
 	outline: none;
@@ -804,7 +847,7 @@ footer .right-col h1{
 footer .border{
 	width: 100px;
 	height: 4px;
-	background: linear-gradient(to right, #EAB464, #EAB464);
+	background: linear-gradient(to right, #ffff00, #ffff00);
 	margin: 2px;
 }
 footer .newsletter-form {
@@ -814,7 +857,7 @@ footer .newsletter-form {
 	flex-wrap: wrap;
 }
 footer input::placeholder {
-  color: white !important;
+  color: black !important;
 }
 footer .txtb {
 	flex: 1;
@@ -834,7 +877,7 @@ footer .btn {
 	padding: 18px 40px;
 	font-size: 16px;
 	color: #f1f1f1;
-	background: linear-gradient(to right, #EAB464, #EAB464);
+	background: linear-gradient(to right, #ffff00, #ffff00);
 	border: none;
 	font-weight: 700;
 	outline: none;
@@ -846,6 +889,30 @@ footer .btn {
 footer .btn:hover {
 	opacity: .7;
 }
+
+.hub1 {
+	/* display: block; */
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	/* position: relative; */
+	color: white;
+	margin-top: 30px;
+	margin-left: 100px;
+	/* top: 50%; */
+	/* left: 50%; */
+	transform: translate(-50%, -50%);
+	/* float: left; */
+  }
+
+  .hub1 span:nth-child(2) {
+	background: #FF9900;
+	color: #000000;
+	border-radius: 8px;
+	padding: 0px 6px 0px 6px;
+	/* display: inline-block; */
+  }
+
 
 /*PROPERTIES FOR MAKING WEBSITE RESPONSIVE*/
 @media screen and (max-width: 960px) {
@@ -860,6 +927,11 @@ footer .btn:hover {
 		width: 100%;
 		text-align: center;
 	}
+
+	.left-col .hub1{
+		margin-left: 48vw;
+	}
+
 	.social-media {
 		display: flex;
 		justify-content: center;
@@ -913,3 +985,4 @@ footer .btn:hover {
 		width: 100%;
 	}
 }
+
